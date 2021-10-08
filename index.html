@@ -49,6 +49,7 @@ function getRandomWordUppercased() {
 }
 
 
+// log2(7776) * 2 * (99-10) = ~2300 bytes of entropy?
 function generatePassphrase() {
     return getRandomWordUppercased()
 	    + getRandomInt( 10, 99 ).toString()
